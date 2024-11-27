@@ -10,6 +10,8 @@ import ImageResult from '../components/image-result'
 import Header from '../components/header'
 import { useState } from 'react'
 import { checkpoints } from '../model/data'
+import Footer from '../components/footer'
+import { ThemeToggle } from '../components/theme-toggle'
 
 const ComponentPreviews = () => {
     const defaultSrc = '/static/placeholder.svg'
@@ -47,6 +49,12 @@ const ComponentPreviews = () => {
             </ComponentPreview>
             <ComponentPreview path="/ComponentPreviews">
                 <ComponentPreviews/>
+            </ComponentPreview>
+            <ComponentPreview path="/Footer">
+                <Footer/>
+            </ComponentPreview>
+            <ComponentPreview path="/ThemeToggle">
+                <ThemeToggle/>
             </ComponentPreview>
         </Previews>
     );

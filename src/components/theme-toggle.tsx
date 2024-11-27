@@ -4,11 +4,13 @@ import { useTheme } from 'next-themes'
 
 export function ThemeToggle() {
     const {theme, setTheme} = useTheme()
-    const toggleThemeMode = () => {
+
+    function toggleThemeMode() {
         setTheme(theme === 'light' ? 'dark' : 'light')
     }
+
     return (
-        <IconButton aria-label="toggle color mode" onClick={toggleThemeMode}>
+        <IconButton size={{base: 'xs', sm: 'md'}} aria-label="toggle color mode" onClick={toggleThemeMode}>
             {theme === 'light' ? <Moon/> : <Sun/>}
         </IconButton>
     )

@@ -4,10 +4,10 @@ import { BsFillLightningChargeFill } from 'react-icons/bs'
 export default function Header() {
     return (
         <HStack>
-            <Box fontSize="2xl" color="orange.500">
+            <Box fontSize={{base: 'lg', sm: '2xl'}} color="orange.500">
                 <BsFillLightningChargeFill/>
             </Box>
-            <Heading size="xl" letterSpacing="tight">
+            <Heading size={{base: 'md', sm: 'xl'}} letterSpacing="tight">
                 Quick AI Image Generator
             </Heading>
         </HStack>
