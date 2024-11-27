@@ -4,6 +4,7 @@ import Header from './components/header'
 import MainPage from './components/main-page'
 import { Toaster } from './components/ui/toaster'
 import Footer from './components/footer'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function Page() {
     return (
@@ -22,6 +23,7 @@ export default function Page() {
                     <Footer/>
                 </Box>
                 <Toaster/>
+                <Analytics/>
             </VStack>
         </Box>
     )
