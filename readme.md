@@ -19,7 +19,7 @@ Aspect ratios :
 * Potrait : 768 x 1152
 * Landscape : 1152 x 768 
 
-## Teck Stacks
+## Tech Stacks
 * JavaScript runtime : [Bun](https://bun.sh/)
 * Main languange : [Typescript](https://www.typescriptlang.org)
 * UI Framework : [React](https://react.dev/)
